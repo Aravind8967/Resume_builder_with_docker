@@ -1,6 +1,4 @@
-# Resume_builder_with_docker
-
-# Resume Builder Project
+# Resume Builder Project with Docker
 
 A modern, Dockerized Resume Builder web application that allows users to create, edit, and print their resumes. The application uses a sleek dark theme for an impressive editing experience and automatically switches to a clean white layout with black text when printing. It leverages Flask as the backend framework and MongoDB for data storage, all containerized with Docker and orchestrated using Docker Compose.
 
