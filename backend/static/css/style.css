@@ -1,0 +1,54 @@
+/* Overall dark theme */
+body {
+    background-color: #121212;
+    color: #f5f5f5;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Slightly lighter background for form containers */
+  .bg-dark-subtle {
+    background-color: #1e1e1e !important;
+  }
+  
+  /* Overriding form controls to match dark theme */
+  .form-control,
+  .form-control:focus {
+    background-color: #2a2a2a !important;
+    color: #f5f5f5 !important;
+    border: 1px solid #444 !important;
+  }
+  
+  /* Buttons for remove, add, etc. */
+  .btn-outline-danger {
+    color: #dc3545 !important;
+    border-color: #dc3545 !important;
+  }
+  .btn-outline-danger:hover {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+  }
+  
+  /* Print overrides: make the background white and text black */
+  @media print {
+    body {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    .bg-dark-subtle {
+      background-color: #ffffff !important;
+    }
+    #resume-container {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+    }
+    .accent {
+      color: #000000 !important; /* or keep the accent color if you prefer */
+    }
+    .accent-border {
+      border-top: 2px solid #000 !important;
+    }
+    .btn {
+      display: none !important;
+    }
+  }
+  

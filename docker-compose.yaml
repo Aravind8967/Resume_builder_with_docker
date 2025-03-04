@@ -1,0 +1,25 @@
+services:
+  app_service:
+    build: ./backend
+    container_name: app_service
+    tty: true
+    stdin_open: true
+    networks:
+      - project_nw
+    ports:
+      - "80:5000"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    container_name: mongo_db
+    networks:
+      - project_nw
+    ports:
+      - "81:27017"
+    environment:
+      MONGO_INITDB_DATABASE: resume_builder
+
+networks:
+  project_nw:
